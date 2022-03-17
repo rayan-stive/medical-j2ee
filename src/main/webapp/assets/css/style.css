@@ -1,0 +1,81 @@
+.navbar-nav{
+	text-align: center;
+    
+}
+
+.navbar-nav a{
+	margin: 20px;
+	font-family: poppins;
+    font-size: 18px; 
+    text-tranform: uppercase;
+    font-weight: bold;
+    
+}
+.navbar-light .navbar-brand{
+	color: #fff;
+	font-size: 25px;
+	text-tranform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.carousel-item{
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-backgrounde-size: cover;
+	background-size: cover;
+}      
+
+.carousel-caption{
+	bottom: 220px;
+}
+
+.carousel-caption h3{
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing : 2px;
+	margin-top: 25px;
+	font-family: merienda;
+}
+
+.carousel-caption p{
+	width: 60%;
+	margin: auto;
+	font-size: 22px;
+	line-height: 1.9;
+	font-family: poppins;
+}
+
+.carousel-caption a{
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	color: #fff;
+}
+
+.navbar-linght .navbar-nav .nav-link{
+	color:#fff;
+}
+.navbar-nav{
+	text-align: center;
+}
+.nav-link{
+	padding: 2rem 1rem;
+}
+.nav-link.active, nav-link:focus{
+	color:#fff ! important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #fff ! important;
+}
+

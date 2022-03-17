@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!DOCTYPE validators PUBLIC 
+		  "-//Apache Struts//Xwork Validator 1.0.2//EN"
+		  "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+		  
+ <validators>
+ 	<field name="patient.id">
+ 		<field-validator type="requiredstring">
+ 			<message>obligatoire</message>
+ 		</field-validator>
+ 		<field-validator type="stringlength">
+ 			<param name="minLength">3</param>
+ 			<param name="maxLength">10</param>
+ 			<message key="id.invalide"></message>
+ 		</field-validator>
+ 			
+		
+ 	</field>
+ 	<field name="patient.nom">
+ 		<field-validator type="requiredstring">
+ 			<message key="id.obligatoire" />
+ 		</field-validator>
+ 	</field>
+ </validators>

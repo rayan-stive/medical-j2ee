@@ -1,0 +1,8 @@
+com\medical\dao\IPatientDAO.class
+com\medical\entites\Patient.class
+com\medical\dao\PatientDAOJPAImpl.class
+com\medical\service\SingletonService.class
+com\medical\dao\PatientDAOImpl.class
+com\medical\service\IPatientService.class
+com\medical\service\PatientServiceImpl.class
+com\medical\web\PatientAction.class

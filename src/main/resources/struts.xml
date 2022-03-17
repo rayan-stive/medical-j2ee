@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+		<default-action-ref name="index" />
+		<action name="index">
+			<result>views/index.jsp</result>
+		</action>
+		
+		<!-- Patient -->
+		<action name="patient" class="com.medical.web.PatientAction" method="index">
+			<result name="success">views/patient.jsp</result>
+		</action>
+		<action name="save" class="com.medical.web.PatientAction" method="save">
+			<result name="success">views/patient.jsp</result>
+			<result name="input">views/patient.jsp</result>
+		</action>
+		<action name="delete" class="com.medical.web.PatientAction" method="delete">
+			<result name="success">views/patient.jsp</result>
+		</action>
+		<action name="edit" class="com.medical.web.PatientAction" method="edit">
+			<result name="success">views/patient.jsp</result>
+		</action>
+		<action name="saveConsultation" class="com.medical.web.PatientAction" method="saveConsultation">
+			<result name="success">views/consultation.jsp</result>
+			<result name="input">views/patient.jsp</result>
+		</action>
+		
+		<!-- Consultation -->
+		<action name="consultation" class="com.medical.web.ConsultationAction" method="index">
+			<result name="success">views/consultation.jsp</result>
+		</action>
+		<action name="deleteConsultation" class="com.medical.web.ConsultationAction" method="deleteConsultation">
+			<result name="success">views/consultation.jsp</result>
+		</action>
+		<action name="editConsultation" class="com.medical.web.ConsultationAction" method="editConsultation">
+			<result name="success">views/consultation.jsp</result>
+		</action>
+		
+		
+		<!-- Medecin -->
+		
+		<action name="medecin" class="com.medical.web.MedecinAction" method="index">
+			<result name="success">views/medecin.jsp</result>
+		</action>
+		<action name="saveMedecin" class="com.medical.web.MedecinAction" method="saveMedecin">
+			<result name="success">views/medecin.jsp</result>
+			<result name="input">views/medecin.jsp</result>
+		</action>
+		<action name="deleteMedecin" class="com.medical.web.MedecinAction" method="deleteMedecin">
+			<result name="success">views/medecin.jsp</result>
+		</action>
+		<action name="editMedecin" class="com.medical.web.MedecinAction" method="editMedecin">
+			<result name="success">views/medecin.jsp</result>
+		</action>
+		
+	</package>
+</struts>
